@@ -30,4 +30,8 @@ public class Octal extends Base{
     public String convertirOctal() {
         return this.valor;
     }
+    @Override
+    public String toString() {
+        return valor+" en octal";
+    }
 }

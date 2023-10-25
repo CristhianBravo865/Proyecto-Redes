@@ -30,5 +30,8 @@ public class Hexadecimal extends Base{
     public String convertirHexadecimal() {
         return this.valor;
     }
-
+    @Override
+    public String toString() {
+        return valor+" en hexadecimal";
+    }
 }

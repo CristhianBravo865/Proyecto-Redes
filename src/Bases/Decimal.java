@@ -2,13 +2,10 @@ package Bases;
 
 public class Decimal extends Base {
     private int valor;
-
     public Decimal(String valor) {
         try {
-            // Intentamos convertir la cadena en un valor decimal
             int valordec = Integer.parseInt(valor);
 
-            // Comprobamos si el valor es un número válido en decimal (no negativo)
             if (valordec < 0) {
                 throw new IllegalArgumentException("El valor debe ser un número decimal no negativo");
             }
@@ -38,5 +35,10 @@ public class Decimal extends Base {
 
     public int convertirDecimal() {
         return this.valor;
+    }
+
+    @Override
+    public String toString() {
+        return valor+" en decimal";
     }
 }
